@@ -5,8 +5,14 @@ module.exports = {
 
   ],
   theme: {
-    extend: {},
+    extend: {
+
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-hero-patterns'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+  ],
 }
 
