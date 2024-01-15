@@ -1,37 +1,51 @@
-
-name: Build and Deploy
-
+name: Deployment
 on:
   push:
-    branches: [ main ]
-
+    branches:
+      - master
 jobs:
+  # Build job
   build:
-
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        node-version: [12.x]
     steps:
-      # https://github.com/actions/checkout
-      - uses: actions/checkout@v3
-        
-      # a standard step for GitHub actions on Node
-      # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v3
-        with:
-          # update the Node version to meet your needs
-          node-version: 16
-          cache: npm
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install Packages
+      run: npm install
+    - name: Build page
+      run: npm run build
+      env:
+        CI: ""
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v2
+      with:
+        path: build
+      
+    
+  # Deploy job
+  deploy:
+    # Add a dependency to the build job
+    needs: build
 
-      - name: Build
-        run: |
-          npm ci
-          npm run build
-          npm run export
-          touch out/.nojekyll
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
 
-      - name: Deploy
-        # https://github.com/JamesIves/github-pages-deploy-action
-        uses: JamesIves/github-pages-deploy-action@4.4.0
-        with:
-          branch: gh-pages
-          folder: out
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    # Specify runner + deployment step
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2 # or the latest "vX.X.X" version tag for this action
