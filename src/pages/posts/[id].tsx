@@ -1,6 +1,6 @@
 import { PostComponent } from '@/Post/Post';
-import { recFindByExt } from '../../util'
 import fs from 'fs'
+import path from 'path'
 
 //TODO: generate a content index on page build
 //https://github.com/jackyzha0/quartz/blob/f36376503a20f8b0697d72cf1e41dcf402020891/quartz/plugins/emitters/contentIndex.ts#L10
@@ -56,4 +56,24 @@ export async function getStaticProps({ params }: { params: { id: string, file_pa
 
   // Pass post data to the page via props
   return { props: { post, title } }
+}
+
+export function recFindByExt(base: string, ext: string, past_files?: string[], past_result?: string[]): string[] {
+  const files = past_files ?? fs.readdirSync(base)
+  var result: string[] = past_result ?? []
+
+  files.forEach(
+    function (file: string) {
+
+      const newbase = path.join(base, file);
+
+      if (fs.statSync(newbase).isDirectory()) result = recFindByExt(newbase, ext, fs.readdirSync(newbase), result)
+      else {
+        if (file.substr(-1 * (ext.length + 1)) == '.' + ext) {
+          result.push(newbase)
+        }
+      }
+    }
+  )
+  return result
 }
