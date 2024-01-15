@@ -38,33 +38,4 @@ Do you see the problem? There is a world where Sally Continental or Tim Goodyear
 
 This is an objectively worse outcome because GDP was sacrificed so John Tire Jr. could rest on his laurels. If Sally Continental was allowed to overtake John Tire Jr., the world would be more productive because Sally was able to reduce the manufacturing cost through innovation so the price could stay the same.
 
-#### $1 Today is Worth More Than $1 in the Future
-Concrete Example:
-![[Screenshot 2024-01-11 at 11.48.36 AM.png]]
-[*CPI Adjusted $1 value From the Bureau of Labor Statistics via tools.carboncollective.co*](https://tools.carboncollective.co/inflation/us/2010/1/)
-
-From the Bureau of labor statistics we can see that the value of $1 in 2010 is roughly $1.38 in 2024 dollars because of inflation. In our tire example, the price of the tire doesn't change so its easy to calculate the value of a tire purchased in 2010. 
-
-#### Lets start with John Tire Jr.
-
-![[Screenshot 2024-01-11 at 12.10.08 PM.png]]
-
-![[Screenshot 2024-01-11 at 12.10.43 PM.png]]
-
-A brand new unused tire purchased in 2010 for $100 would be worth $138, but John Tire Jr. is still only charging $100! How generous of John Tire Jr. He knows his customers have come to expect that a tire costs $100 and they really don't want to pay more because Jane Michelin charges the same $100. If John started charging $138 people would say he's crazy and go buy Jane's tire. 
-
-So he reduces the life of the tire by 28%. If we assume linear scaling, a tire with 28% less life in 2010 would be worth $72 right ($100 - 32%)? Lets compare the value of an $72 and $100 tire in 2010 to a tire in 2024 dollars: 
-
-![[Screenshot 2024-01-11 at 9.47.42 PM.png]]
-
-🤔 Damn thats crazy. Because of the reduced life span, $100 of tire today from John Tire is worth less than $100 of tire in 2010.
-
-How much worse? $38 worse, but what do those $38 unreal abstract dollars mean? They are real in the sense that they are today's dollars (2024), but they aren't real in the sense that I can touch them or spend them. How do you get them back and how do you make them real? First, lets consider Lucy Continental's Tire Startup.
-
-#### Lucy Continental's Tire Startup
-
-If Lucy Continental got a key (small loan of only $100 million) venture funding that allowed her to buy a similar tire plant and rubber factory, she might provide a better product than John Tire Jr. and run him out of business.
-
-Suppose Lucy's tire compound costs 
-
 
