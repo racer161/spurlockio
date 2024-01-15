@@ -6,7 +6,7 @@ In the ideal version of Laissez-Faire capitalism, consumers are well educated an
 1. realize they have a need 
 2. go to Amazon to search
 3. always buy the first item in the search results because it would provide them the most utility
-### An Apt Example
+### An Example
 Assume we have this system. There still exists a problem on both the supply and demand side. Over time as markets mature, producers of a good might seek to vertically integrate their supply chain. Lets take a tire company for example. John's Tire Co. has been manufacturing Tires since 1928. Tires are a highly competitive market with lots of other companies making similar goods so they make a small profit margin ~ 10%, but sell high volume because John Tire Jr. is ambitious and has expanded his father's company across the entire U.S. John Tire Jr. gets a genius idea. He plans to buy a local rubber plant and convert them to only manufacture tire grade rubber. He also plans to buy an oil post processing plant and convert it to only manufacture oil by-products that can be converted into grade A tire rubber. After only a year, John's Tire has a duopoly with only one other tire manufacture that has also vertically integrated. Together they make the best tires in the world for the cheapest prices and the world is great!
 
 #### Market Maturity

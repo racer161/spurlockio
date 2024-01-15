@@ -15,13 +15,13 @@ export function PostComponent(props: { markdown: string, title: string }) {
   return (
     <div className='w-screen flex items-center justify-center pt-10 bg-gray-50'>
       <div className='w-full lg:max-w-4xl mb-10'>
-        <div className='filter drop-shadow-md mt-2 p-4 pb-0 sm:p-8 sm:pb-0  bg-white'>
+        <div className='filter drop-shadow-md mt-2 p-4 sm:p-8  bg-white'>
           <div className=' w-full mb-4'>
             <div className='p-4 pl-1'>
               <h1 className='text-3xl font-sans text-black select-none'>{props.title}</h1>
               <p className='font-mono text-gray-400 text-xs underline'>by <a href='https://ethan.spurlock.io'>Ethan Spurlock</a></p>
             </div>
-            <div className='flex-row flex gap-1 pt-2 heropattern-texture-gray-400 p-2'>
+            <div className='flex-row flex gap-1 pt-2 heropattern-texture-amber-400 p-2'>
               {tagComponents}
             </div>
           </div>
@@ -35,13 +35,13 @@ export function PostComponent(props: { markdown: string, title: string }) {
 
 function GraphDisclaimer() {
   return (
-    <div className='border-4 border-b-0 border-yellow-300 mt-16 p-4 rounded-t-xl '>
+    <div className='border-4 border-yellow-300 mt-12 p-4 rounded-xl '>
       <p className='font-bold text-gray-600 text-sm'>
-        What is this place?
+        What is this?
       </p>
       <p className=' font-light text-gray-500 text-sm text-justify'>
         I use this site as a place to write down and work through my thoughts for the sake of completeness
-        and so I can link/refer back to explanations. I have included some notes that some might consider BASIC AF 🧐
+        and so I can link/refer back to explanations. I have included some notes that some might consider BASIC AF 🧐.
         This is my knowledge graph not wikipedia.
       </p>
     </div>
@@ -91,9 +91,9 @@ const components = {
 }
 
 function TagComponent(props: { tag: string }) {
-  const color = randomColor().hexString();
+  const color = randomColor(0.99).hexString();
   return (
-    <p className=" bg-gray-50 text-gray-500 font-mono filter drop-shadow text-xs px-2 py-1 cursor-pointer select-none hover:bg-gray-400" >
+    <p className=" text-white font-mono filter drop-shadow text-xs px-2 py-1 cursor-pointer select-none hover:bg-gray-400" style={{ backgroundColor: color }}>
       {props.tag}
     </p>
   )
