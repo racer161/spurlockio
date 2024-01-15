@@ -1,8 +1,7 @@
 import { recFindByExt } from '../../util'
-import markdownit from 'markdown-it'
 import fs from 'fs'
+import Markdown from 'react-markdown'
 
-const md = markdownit('commonmark');
 const package_root_dir = process.cwd();
 const vault_path = package_root_dir + '/vault/SPURLOCKIO';
 
@@ -11,10 +10,10 @@ const vault_path = package_root_dir + '/vault/SPURLOCKIO';
 
 export default function Post({ post }: { post: string }) {
 
-  const content = md.render(post);
-
   return (
-    <div dangerouslySetInnerHTML={{ __html: content }} />
+    <div>
+      <Markdown>{post}</Markdown>
+    </div>
   )
 }
 
