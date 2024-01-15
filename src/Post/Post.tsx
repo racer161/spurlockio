@@ -18,9 +18,9 @@ export function PostComponent(props: { markdown: string, title: string }) {
       <div className='w-full lg:max-w-4xl mb-10'>
         <div className='filter drop-shadow-md mt-2 p-4 pb-0 sm:p-8 sm:pb-0  bg-white'>
           <div className=' w-full mb-4'>
-            <div className='p-4'>
-              <h1 className='text-xl font-mono font-semibold text-gray-600'>{props.title}</h1>
-              <p className='font-mono text-gray-500 text-xs underline'>by <a href='https://ethan.spurlock.io'>Ethan Spurlock</a></p>
+            <div className='p-4 pl-1'>
+              <h1 className='text-3xl font-sans font-bold text-black select-none'>{props.title}</h1>
+              <p className='font-mono text-gray-400 text-xs underline'>by <a href='https://ethan.spurlock.io'>Ethan Spurlock</a></p>
             </div>
             <div className='flex-row flex gap-1 pt-2 heropattern-texture-gray-400 p-2'>
               {tagComponents}
@@ -60,7 +60,7 @@ const components = {
     return <li className=" text-gray-800 pl-8 font-serif text-justify"><span className='font-bold px-2'>•</span>{props.children}</li>
   },
   blockquote(props: any) {
-    return <blockquote className=" border-l-4 prose-p:text-purple-400 border-purple-400 bg-gray-100 font-medium p-4 text-sm">{props.children}</blockquote>
+    return <blockquote className=" border-l-4 prose-p:text-gray-500 border-gray-500 bg-gray-100 font-medium p-4 text-sm">{props.children}</blockquote>
   },
   h2(props: any) {
     return (
