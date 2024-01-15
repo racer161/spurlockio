@@ -24,7 +24,7 @@ export async function getStaticPaths() {
 
     const file_full_path = file;
 
-    const trimmed_file_path = file_full_path.substring(vault_path.length + 1).replace(/\.md$/, '');
+    const trimmed_file_path = file_full_path.substring(vault_path.length + 1).replace(/\.md$/, '').replace('/', '_')
 
     console.log(trimmed_file_path);
 
@@ -50,8 +50,10 @@ export async function getStaticProps({ params }: { params: { id: string, file_pa
 
   const trimmed_file_name = file_name.toLocaleLowerCase().replace(/\.md$/, '').replace(' ', '-');
 
+  const fixed_file_path = params.id.replace('_', '/');
+
   //read file contents to string
-  const post = fs.readFileSync(vault_path + '/' + params.id + '.md', 'utf8');
+  const post = fs.readFileSync(vault_path + '/' + fixed_file_path + '.md', 'utf8');
 
   // Pass post data to the page via props
   return { props: { post, trimmed_file_name } }
