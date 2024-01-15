@@ -64,8 +64,8 @@ const components = {
   },
   h2(props: any) {
     return (
-      <div className='w-full border-b-2 mb-4 mt-8 border-red-300'>
-        <h2 className="text-lg sm:text-2xl font-bold text-white w-max p-1 bg-red-300">
+      <div className='w-full border-b-2 mb-4 mt-8 border-red-400'>
+        <h2 className="text-lg sm:text-2xl font-bold text-white w-max p-1 bg-red-400">
           {props.children}
         </h2>
       </div>
@@ -73,8 +73,8 @@ const components = {
   },
   h3(props: any) {
     return (
-      <div className='w-full border-b-2 mb-4 mt-8 border-sky-300'>
-        <h3 className="text-md sm:text-xl font-bold  text-white w-max p-1 bg-sky-300">
+      <div className='w-full border-b-2 mb-4 mt-8 border-sky-400'>
+        <h3 className="text-md sm:text-xl font-bold  text-white w-max p-1 bg-sky-400">
           {props.children}
         </h3>
       </div>
@@ -82,8 +82,8 @@ const components = {
   },
   h4(props: any) {
     return (
-      <div className='w-full border-b-2 mt-6 mb-2 border-lime-300' >
-        <h4 className="font-mono font-semibold text-white w-max p-1 bg-lime-300" >
+      <div className='w-full border-b-2 mt-6 mb-2 border-lime-400' >
+        <h4 className="font-mono font-semibold text-white w-max p-1 bg-lime-400" >
           {props.children}
         </h4>
       </div>
