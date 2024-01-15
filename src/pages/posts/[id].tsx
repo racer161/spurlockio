@@ -1,6 +1,10 @@
+import { PostComponent } from '@/Post/Post';
 import { recFindByExt } from '../../util'
 import fs from 'fs'
-import Markdown from 'react-markdown'
+
+//TODO: generate a content index on page build
+//https://github.com/jackyzha0/quartz/blob/f36376503a20f8b0697d72cf1e41dcf402020891/quartz/plugins/emitters/contentIndex.ts#L10
+
 
 const package_root_dir = process.cwd();
 const vault_path = package_root_dir + '/vault/SPURLOCKIO';
@@ -8,13 +12,9 @@ const vault_path = package_root_dir + '/vault/SPURLOCKIO';
 //Root post renderer
 //Loops through all obsidian markdown notes and renders them as posts
 
-export default function Post({ post }: { post: string }) {
+export default function Post({ post, title }: { post: string, title: string }) {
 
-  return (
-    <div>
-      <Markdown>{post}</Markdown>
-    </div>
-  )
+  return (<PostComponent markdown={post} title={title} />);
 }
 
 export async function getStaticPaths() {
@@ -45,9 +45,9 @@ export async function getStaticProps({ params }: { params: { id: string, file_pa
 
   console.log(params);
 
-  const file_name = params.id.split('/').pop() ?? params.id;
+  const file_name = params.id.split('_').pop() ?? params.id;
 
-  const trimmed_file_name = file_name.toLocaleLowerCase().replace(/\.md$/, '').replace(' ', '-');
+  const title = file_name.toLocaleLowerCase().replace(/\.md$/, '');
 
   const fixed_file_path = params.id.replace('_', '/');
 
@@ -55,5 +55,5 @@ export async function getStaticProps({ params }: { params: { id: string, file_pa
   const post = fs.readFileSync(vault_path + '/' + fixed_file_path + '.md', 'utf8');
 
   // Pass post data to the page via props
-  return { props: { post, trimmed_file_name } }
+  return { props: { post, title } }
 }

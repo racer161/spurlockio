@@ -1,19 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  eslint: {
-    dirs: ['src'],
-  },
-
   reactStrictMode: true,
-  swcMinify: true,
-
-  // Uncoment to add domain whitelist
-  // images: {
-  //   domains: [
-  //     'res.cloudinary.com',
-  //   ],
-  // },
 
   webpack(config) {
     // Grab the existing rule that handles SVG imports

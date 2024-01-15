@@ -2,7 +2,7 @@
 
 *I use this site as a place to write down and work through my thoughts so for the sake of completeness and so I can link/refer back to explanations I have included some notes that some might consider BASIC AF 🧐 Remember this is a knowledge graph not a news site.*
 
-*TL;DR: You cannot express the idea of monopoly without expressing the idea of volatile market dynamics over time due to competition. Once you have the language to explain competition and time you can understand that some agents will seek to rig the game so these changes become less erratic and even favorable at the expense of better GDP and productivity.*
+>TL;DR: You cannot express the idea of monopoly without expressing the idea of volatile market dynamics over time due to competition. Once you have the language to explain competition and time you can understand that some agents will seek to rig the game so these changes become less erratic and even favorable at the expense of better GDP and productivity.
 
 *If you are familiar with the economics of monopoly you can skip 😁 to [[The Yuppie Feedback Loop]]*
 ### The Conniving Chicanery of  Cheap Crap Creep
