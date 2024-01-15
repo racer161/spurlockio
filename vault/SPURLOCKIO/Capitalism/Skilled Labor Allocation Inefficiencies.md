@@ -1,0 +1,1 @@
+There is a problem where people become doctors just because it makes a lot of money, but society might actually be better off if they did what they were actually passionate about.
