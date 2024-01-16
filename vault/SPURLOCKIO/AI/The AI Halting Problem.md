@@ -1,3 +1,4 @@
+#ai 
 ### Hypothesis: Any AI system will optimize to the minimum complexity underlying function possible because of Occam's Razor.
 
 If the observations given to the the AI model only reveal simple relationships then the AI will only approximate an underlying function that will map these simple relationships IT WON'T IMAGINE NEW RELATIONSHIPS THAT HUMANS KNOW EXIST outside of the observations given.
