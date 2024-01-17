@@ -8,6 +8,7 @@ const nextConfig = {
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.('.svg')
     );
+    config.externals = [...config.externals, 'child_process'];
 
     config.module.rules.push(
       // Reapply the existing rule, but only for svg imports ending in ?url

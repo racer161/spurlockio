@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/The AI Halting Problem.md",
+                "file": "Economics/Monopoly.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/The AI Halting Problem.md",
+                "file": "Economics/Monopoly.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/The AI Halting Problem.md",
+                "file": "Economics/Monopoly.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "AI/The AI Halting Problem.md"
+                "file": "Economics/Monopoly.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "78db6780936d62e1",
   "lastOpenFiles": [
-    "Economics/The Yuppie Feedback Loop.md",
     "AI/The AI Halting Problem.md",
+    "Philosophy/The Utility of a Psychopath.md",
+    "Philosophy",
+    "Economics/The Yuppie Feedback Loop.md",
     "AI",
     "Economics/Skilled Labor Allocation Inefficiencies.md",
     "Economics/Monopoly.md",

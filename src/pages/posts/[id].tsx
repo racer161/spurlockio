@@ -8,31 +8,57 @@ import fs from 'fs'
 
 const package_root_dir = process.cwd();
 const vault_path = package_root_dir + '/vault/SPURLOCKIO';
+const AVERAGE_WORDS_PER_MINUTE = 200;
+
+interface IOPost {
+  title: string,
+  file_full_path: string,
+}
+
+
 
 //Root post renderer
 //Loops through all obsidian markdown notes and renders them as posts
 
-export default function Post({ post, title }: { post: string, title: string }) {
+export default function Post({ markdown, title, ctime, mtime, readingTime }: { markdown: string, title: string, mtime: string, ctime: string, readingTime: number }) {
 
-  return (<PostComponent markdown={post} title={title} />);
+  return (<PostComponent markdown={markdown} title={title} created={new Date(ctime)} updated={new Date(mtime)} readingTime={readingTime} />);
 }
 
 export async function getStaticPaths() {
+
+  var posts: { [key: string]: IOPost } = {};
 
   const paths = recFindByExt(vault_path, 'md').map((file: string) => {
 
     const file_full_path = file;
 
-    const trimmed_file_path = file_full_path.substring(vault_path.length + 1).replace(/\.md$/, '').replace('/', '_')
+    const file_name = file.split('/').pop() ?? file;
 
-    console.log(trimmed_file_path);
+    const trimmed_file_name = file_name.replace('.md', '');
+
+    const id = trimmed_file_name.replace(/ /g, '-').toLowerCase();
+
+    const post: IOPost = {
+      title: trimmed_file_name,
+      file_full_path: file_full_path,
+    };
+
+    if (posts[id] !== undefined) {
+      throw new Error(`Duplicate post id: ${id}`);
+    }
+
+    posts[id] = post;
 
     return {
       params: {
-        id: trimmed_file_path
+        id: id,
       },
     }
   });
+
+  //write out the posts index to a file
+  fs.writeFileSync(package_root_dir + '/posts_index.json', JSON.stringify(posts));
 
   return {
     paths,
@@ -41,19 +67,35 @@ export async function getStaticPaths() {
 }
 
 // This also gets called at build time
-export async function getStaticProps({ params }: { params: { id: string, file_path: string, path: string } }) {
+export async function getStaticProps({ params }: { params: { id: string } }) {
 
-  console.log(params);
+  const posts_string = fs.readFileSync(package_root_dir + '/posts_index.json', 'utf8');
 
-  const file_name = params.id.split('_').pop() ?? params.id;
+  const posts: { [key: string]: IOPost } = JSON.parse(posts_string);
 
-  const title = file_name.toLocaleLowerCase().replace(/\.md$/, '');
+  const post: IOPost | undefined = posts[params.id];
 
-  const fixed_file_path = params.id.replace('_', '/');
+  const markdown = fs.readFileSync(post?.file_full_path ?? '', 'utf8');
 
-  //read file contents to string
-  const post = fs.readFileSync(vault_path + '/' + fixed_file_path + '.md', 'utf8');
+  const { mtime, ctime } = fs.statSync(post?.file_full_path ?? '');
+
+  const wordCount = getWordCount(markdown);
+
+
 
   // Pass post data to the page via props
-  return { props: { post, title } }
+  return {
+    props:
+    {
+      markdown: markdown,
+      title: post?.title ?? '',
+      mtime: mtime.toISOString(),
+      ctime: ctime.toISOString(),
+      readingTime: Math.ceil(wordCount / AVERAGE_WORDS_PER_MINUTE),
+    }
+  }
+}
+
+function getWordCount(markdown: string): number {
+  return markdown.split(' ').length;
 }
