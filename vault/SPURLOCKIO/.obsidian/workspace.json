@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Economics/Monopoly.md",
+                "file": "Philosophy/The Utility of a Psychopath.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Economics/Monopoly.md",
+                "file": "Philosophy/The Utility of a Psychopath.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Economics/Monopoly.md",
+                "file": "Philosophy/The Utility of a Psychopath.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Economics/Monopoly.md"
+                "file": "Philosophy/The Utility of a Psychopath.md"
               }
             }
           }
@@ -148,13 +148,13 @@
   },
   "active": "78db6780936d62e1",
   "lastOpenFiles": [
+    "Economics/The Yuppie Feedback Loop.md",
+    "Economics/Monopoly.md",
     "AI/The AI Halting Problem.md",
     "Philosophy/The Utility of a Psychopath.md",
     "Philosophy",
-    "Economics/The Yuppie Feedback Loop.md",
     "AI",
     "Economics/Skilled Labor Allocation Inefficiencies.md",
-    "Economics/Monopoly.md",
     "Welcome.md"
   ]
 }

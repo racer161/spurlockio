@@ -10,7 +10,7 @@ const package_root_dir = process.cwd();
 const vault_path = package_root_dir + '/vault/SPURLOCKIO';
 const AVERAGE_WORDS_PER_MINUTE = 200;
 
-interface IOPost {
+export interface IOPost {
   title: string,
   file_full_path: string,
 }
@@ -29,6 +29,8 @@ export async function getStaticPaths() {
 
   var posts: { [key: string]: IOPost } = {};
 
+  var tag_index: { [tag: string]: string[] } = {};
+
   const paths = recFindByExt(vault_path, 'md').map((file: string) => {
 
     const file_full_path = file;
@@ -38,6 +40,26 @@ export async function getStaticPaths() {
     const trimmed_file_name = file_name.replace('.md', '');
 
     const id = trimmed_file_name.replace(/ /g, '-').toLowerCase();
+
+    const file_string = fs.readFileSync(file, 'utf8');
+
+    //use regex to match '#tag' at the beginning of the file, but not markdown headers '# header' or '#### header'
+    const has_tags = file_string.match(/^#[^#]/) !== null;
+
+    if (has_tags) {
+      const tags = file_string.split('\n')[0].split(' ')
+        .filter((tag) => tag !== '')
+        //remove the # from the tags
+        .map((tag) => tag.substring(1));
+
+      tags.forEach((tag) => {
+        if (tag_index[tag] === undefined) {
+          tag_index[tag] = [];
+        }
+
+        tag_index[tag].push(id);
+      });
+    }
 
     const post: IOPost = {
       title: trimmed_file_name,
@@ -60,6 +82,8 @@ export async function getStaticPaths() {
   //write out the posts index to a file
   fs.writeFileSync(package_root_dir + '/posts_index.json', JSON.stringify(posts));
 
+  fs.writeFileSync(package_root_dir + '/tag_index.json', JSON.stringify(tag_index));
+
   return {
     paths,
     fallback: false,
@@ -80,7 +104,6 @@ export async function getStaticProps({ params }: { params: { id: string } }) {
   const { mtime, ctime } = fs.statSync(post?.file_full_path ?? '');
 
   const wordCount = getWordCount(markdown);
-
 
 
   // Pass post data to the page via props
