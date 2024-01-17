@@ -1,6 +1,6 @@
 #vector-approach 
 
-### [[Which Is Best?]]
+### [[Which Is Best]]
 
 ### [[Quality over Opinion]]
 
