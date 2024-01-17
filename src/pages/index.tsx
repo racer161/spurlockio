@@ -25,8 +25,6 @@ export default function Home(props: { postIndex: { [key: string]: IOPost }, tagI
             <h1 className="font-black">Latest</h1>
             <TagPostList tagIndex={props.tagIndex} postIndex={props.postIndex} />
           </div>
-
-
         </div>
       </div>
     </div>
