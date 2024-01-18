@@ -55,7 +55,7 @@ function GraphDisclaimer() {
 
 const components = {
   em(props: any) {
-    return <p className="italic font-light text-gray-800">{props.children}</p>
+    return <span className="italic font-light text-gray-800">{props.children}</span>
   },
   p(props: any) {
     return <p className=" text-gray-800 font-serif my-2 text-justify">{props.children}</p>
