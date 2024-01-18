@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Approximation/Approximation.md",
+                "file": "Approximation/The Perfect Information Problem.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Approximation/Approximation.md",
+                "file": "Approximation/The Perfect Information Problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Approximation/Approximation.md",
+                "file": "Approximation/The Perfect Information Problem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Approximation/Approximation.md"
+                "file": "Approximation/The Perfect Information Problem.md"
               }
             }
           }
@@ -149,7 +149,7 @@
   "active": "78db6780936d62e1",
   "lastOpenFiles": [
     "The Vector Approach/You Only Go to War When You Can Win Easily.md",
-    "Approximation/Approximation.md",
+    "Approximation/The Perfect Information Problem.md",
     "Approximation",
     "Philosophy/The Vector Approach.md",
     "The Vector Approach/Quality over Opinion.md",
