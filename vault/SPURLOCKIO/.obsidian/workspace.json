@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Approximation/The Perfect Information Problem.md",
+                "file": "Philosophy/A Tale of Two Psychopaths.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Approximation/The Perfect Information Problem.md",
+                "file": "Philosophy/A Tale of Two Psychopaths.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Approximation/The Perfect Information Problem.md",
+                "file": "Philosophy/A Tale of Two Psychopaths.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Approximation/The Perfect Information Problem.md"
+                "file": "Philosophy/A Tale of Two Psychopaths.md"
               }
             }
           }
@@ -148,8 +148,16 @@
   },
   "active": "78db6780936d62e1",
   "lastOpenFiles": [
-    "The Vector Approach/You Only Go to War When You Can Win Easily.md",
+    "Philosophy/The Sync Problem In Modern Power Structures.md",
+    "The Vector Approach/The Path Forward.md",
+    "The Vector Approach/On Deciding....md",
+    "Philosophy/A Tale of Two Psychopaths.md",
+    "Product Development/The Problem With Customer Driven Products.md",
+    "Product Development/Two Product Attack Approaches.md",
+    "Philosophy/Greed is Good.md",
+    "Product Development",
     "Approximation/The Perfect Information Problem.md",
+    "The Vector Approach/You Only Go to War When You Can Win Easily.md",
     "Approximation",
     "Philosophy/The Vector Approach.md",
     "The Vector Approach/Quality over Opinion.md",
