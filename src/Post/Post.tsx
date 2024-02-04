@@ -1,3 +1,4 @@
+import { Head } from 'next/document';
 import Markdown from 'react-markdown'
 var randomColor = require('random-color');
 
@@ -13,7 +14,7 @@ export function PostComponent(props: { markdown: string, title: string, created:
   const markdown = props.markdown.split('\n').slice(1).join('\n');
 
   return (
-    <div className='w-screen flex items-center justify-center pt-10 bg-gray-50'>
+    <div className='w-screen min-h-screen flex items-center justify-center pt-10 bg-neutral-50'>
       <div className='w-full lg:max-w-4xl mb-10'>
         <div className='filter drop-shadow-md mt-2 p-4 sm:p-8  bg-white'>
           <div className=' w-full mb-4'>
