@@ -8,6 +8,7 @@ export default function Ethan() {
     <div>
       <div className="min-h-screen w-screen flex flex-col items-center justify-center bg-neutral-800 text-white">
         <div className="w-full max-w-xl flex flex-col items-center">
+          <img src="/assets/ethan_link.svg" className=" w-64 border-4 border-white rounded-lg mt-12" />
           <div className="flex flex-col items-center mt-12">
             <h1 className="text-3xl font-bold ">Ethan Spurlock</h1>
             <div className="flex flex-row flex-wrap items-center justify-center p-2 text-neutral-400 divide-x">
