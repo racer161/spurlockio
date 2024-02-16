@@ -2,7 +2,6 @@ import Link from "next/link";
 import { IconType } from "react-icons";
 import { FaInstagram, FaGithub, FaFacebookMessenger, FaMailBulk, FaDiscord, FaSteam, FaSignal, FaLinkedin } from "react-icons/fa";
 
-
 export default function Ethan() {
 
   return (
@@ -27,6 +26,9 @@ export default function Ethan() {
             <IconComponent href="https://www.facebook.com/ethan.spurlock.90" Icon={FaFacebookMessenger} />
             <IconComponent href="mailto:ethan@spurlock.io" Icon={FaMailBulk} handle="email" />
             <IconComponent href="https://s.team/p/gmk-wjjv/drkrmbjv" handle="spurlock161" Icon={FaSteam} />
+            <a href="https://youtu.be/dQw4w9WgXcQ?si=Il3tj7U9REGPSEJ9" target="_blank" className="flex flex-col items-center justify-center bg-neutral-700 rounded-lg aspect-square w-28 h-28">
+              <img src="/assets/onlyfans.svg" className="w-20 h-20" />
+            </a>
           </div>
         </div>
       </div>
