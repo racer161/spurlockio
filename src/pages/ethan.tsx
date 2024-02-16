@@ -11,13 +11,13 @@ export default function Ethan() {
         <div className="w-full max-w-xl flex flex-col items-center">
           <div className="flex flex-col items-center mt-20">
             <h1 className="text-3xl font-bold ">Ethan Spurlock</h1>
-            <div className="flex flex-row flex-wrap items-center justify-center p-2">
-              <p className="font-light text-sky-500 pr-2 flex-shrink-0">Ranked Competitive ADHD Enjoyer</p>
-              <p className="font-light text-lime-500 px-2 flex-shrink-0">Software Engineer</p>
-              <p className="font-light text-yellow-500 pl-2 flex-shrink-0">Washed Casual Gamer</p>
-              <p className="font-light text-rose-500 pl-2 flex-shrink-0">Motorcycle Abuser</p>
-              <p className="font-light text-cyan-500 pl-2 flex-shrink-0">Might release a game some day</p>
-              <p className="font-light text-violet-500 pl-2 flex-shrink-0">Book Reader</p>
+            <div className="flex flex-row flex-wrap items-center justify-center p-2 text-neutral-400 divide-x">
+              <p className="font-light pr-2 flex-shrink-0">Ranked Competitive ADHD Enjoyer</p>
+              <p className="font-light px-2 flex-shrink-0">Software Engineer</p>
+              <p className="font-light px-2 flex-shrink-0">Washed Casual Gamer</p>
+              <p className="font-light px-2 flex-shrink-0">Motorcycle Abuser</p>
+              <p className="font-light px-2 flex-shrink-0">Might release a game some day</p>
+              <p className="font-light pl-2 flex-shrink-0">Book Reader</p>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 mt-4 p-8 items-center justify-center justify-items-center w-max">
