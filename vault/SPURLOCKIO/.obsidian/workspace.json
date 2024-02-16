@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Philosophy/A Tale of Two Psychopaths.md",
+                "file": "The Vector Approach/On Deciding....md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Philosophy/A Tale of Two Psychopaths.md",
+                "file": "The Vector Approach/On Deciding....md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Philosophy/A Tale of Two Psychopaths.md",
+                "file": "The Vector Approach/On Deciding....md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Philosophy/A Tale of Two Psychopaths.md"
+                "file": "The Vector Approach/On Deciding....md"
               }
             }
           }
@@ -148,10 +148,10 @@
   },
   "active": "78db6780936d62e1",
   "lastOpenFiles": [
-    "Philosophy/The Sync Problem In Modern Power Structures.md",
     "The Vector Approach/The Path Forward.md",
     "The Vector Approach/On Deciding....md",
     "Philosophy/A Tale of Two Psychopaths.md",
+    "Philosophy/The Sync Problem In Modern Power Structures.md",
     "Product Development/The Problem With Customer Driven Products.md",
     "Product Development/Two Product Attack Approaches.md",
     "Philosophy/Greed is Good.md",
