@@ -9,7 +9,7 @@ export default function Ethan() {
     <div>
       <div className="min-h-screen w-screen flex flex-col items-center justify-center bg-neutral-800 text-white">
         <div className="w-full max-w-xl flex flex-col items-center">
-          <div className="flex flex-col items-center mt-20">
+          <div className="flex flex-col items-center mt-12">
             <h1 className="text-3xl font-bold ">Ethan Spurlock</h1>
             <div className="flex flex-row flex-wrap items-center justify-center p-2 text-neutral-400 divide-x">
               <p className="font-light pr-2 flex-shrink-0">Ranked Competitive ADHD Enjoyer</p>
