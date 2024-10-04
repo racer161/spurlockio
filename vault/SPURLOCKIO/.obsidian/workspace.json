@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Vector Approach/On Deciding....md",
+                "file": "The Vector Approach/Which Is Best.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Vector Approach/On Deciding....md",
+                "file": "The Vector Approach/Which Is Best.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Vector Approach/On Deciding....md",
+                "file": "The Vector Approach/Which Is Best.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Vector Approach/On Deciding....md"
+                "file": "The Vector Approach/Which Is Best.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "78db6780936d62e1",
   "lastOpenFiles": [
-    "The Vector Approach/The Path Forward.md",
+    "The Vector Approach/Quality over Opinion.md",
     "The Vector Approach/On Deciding....md",
+    "The Vector Approach/The Path Forward.md",
     "Philosophy/A Tale of Two Psychopaths.md",
     "Philosophy/The Sync Problem In Modern Power Structures.md",
     "Product Development/The Problem With Customer Driven Products.md",
@@ -160,7 +161,6 @@
     "The Vector Approach/You Only Go to War When You Can Win Easily.md",
     "Approximation",
     "Philosophy/The Vector Approach.md",
-    "The Vector Approach/Quality over Opinion.md",
     "The Vector Approach/Which Is Best.md",
     "Philosophy/The Utility of a Psychopath.md",
     "The Vector Approach",
